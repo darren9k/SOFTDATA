@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Page4">
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="409dp"
+        android:layout_height="101dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginEnd="1dp"
+        app:layout_constraintBottom_toTopOf="@+id/idSmyle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo_sncf" />
+
+    <TextView
+        android:id="@+id/idResultat2"
+        android:layout_width="367dp"
+        android:layout_height="72dp"
+        android:layout_marginStart="139dp"
+        android:layout_marginEnd="140dp"
+        android:layout_marginBottom="44dp"
+        android:gravity="center"
+        android:text="Résulat"
+        android:textColor="#f49c06"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/idListe2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ListView
+        android:id="@+id/idListe2"
+        android:layout_width="408dp"
+        android:layout_height="208dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginEnd="6dp"
+        android:layout_marginBottom="40dp"
+        app:layout_constraintBottom_toTopOf="@+id/idFin2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/idFin2"
+        android:layout_width="234dp"
+        android:layout_height="63dp"
+        android:layout_marginStart="88dp"
+        android:layout_marginEnd="89dp"
+        android:layout_marginBottom="49dp"
+        android:text="FIN PARTICIPATION"
+        android:textSize="18sp"
+        app:backgroundTint="#f49c06"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/idSmyle"
+        android:layout_width="389dp"
+        android:layout_height="149dp"
+        android:layout_marginStart="6dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/idResultat2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:scaleType="centerInside"
+        app:srcCompat="@drawable/smiley" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Inscription">
+
+    <EditText
+        android:id="@+id/idEmail"
+        android:layout_width="224dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="3dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textColor="#f49c06"
+        android:textSize="24sp"
+        app:backgroundTint="#e1d2b8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView6"
+        app:layout_constraintTop_toBottomOf="@+id/idPrenom" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="130dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="12dp"
+        android:text="Email :"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView1" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="139dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="11dp"
+        android:text="Age :"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="133dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="27dp"
+        android:text="Sexe :"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+    <EditText
+        android:id="@+id/idPrenom"
+        android:layout_width="229dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="6dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textColor="#f49c06"
+        android:textSize="24sp"
+        app:backgroundTint="#e1d2b8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView1"
+        app:layout_constraintTop_toBottomOf="@+id/idNom" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="130dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="22dp"
+        android:text="Prenom :"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="407dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginEnd="1dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo_sncf" />
+
+    <EditText
+        android:id="@+id/idNom"
+        android:layout_width="231dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textColor="#f49c06"
+        android:textSize="24sp"
+        app:backgroundTint="#e1d2b8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="129dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="33dp"
+        android:text="Nom :"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    <Spinner
+        android:id="@+id/idAge"
+        android:layout_width="237dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="23dp"
+        android:background="#002196F3"
+        android:spinnerMode="dropdown"
+        android:verticalScrollbarPosition="defaultPosition"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView4"
+        app:layout_constraintTop_toBottomOf="@+id/idEmail" />
+
+    <Spinner
+        android:id="@+id/idFrequence"
+        android:layout_width="234dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="1dp"
+        android:background="#002196F3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView5"
+        app:layout_constraintTop_toBottomOf="@+id/idAge" />
+
+    <Button
+        android:id="@+id/idParticiper"
+        android:layout_width="260dp"
+        android:layout_height="72dp"
+        android:layout_marginTop="93dp"
+        android:layout_marginBottom="86dp"
+        android:text="PARTICIPER"
+        android:textSize="20sp"
+        app:backgroundTint="#e1d2b8"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+</androidx.constraintlayout.widget.ConstraintLayout>
